@@ -13,11 +13,11 @@ public class LargestPalendrome {
         ArrayList<String> palendromes = findPalendromes(str);
 
         Collections.sort(palendromes, new Comparator<String>() {
-                @Override
-                public int compare(String a, String b) {
-                    return a.length() - b.length();
-                }
-            });
+            @Override
+            public int compare(String a, String b) {
+                return a.length() - b.length();
+            }
+        });
 
         System.out.println(palendromes.get(palendromes.size() - 1));
     }
